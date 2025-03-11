@@ -1,0 +1,148 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.pp-header {
+    width: 100%;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: $secondary;
+
+    .pp-navbar,
+    .pp-navbar-nav {
+        display: flex;
+    }
+
+    .pp-navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pp-navbar-nav {
+        gap: 40px;
+
+        .pp-nav-item {
+            .pp-nav-link {
+                color: $primary;
+                font-size: 20px;
+                font-weight: 500;
+                position: relative;
+                transition: ease all .5s;
+
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $primary;
+                    bottom: -2px;
+                    width: 0;
+                    transition: ease all .5s;
+                    left: 50%;
+                    right: 50%;
+                }
+
+                &:hover {
+                    &::before {
+                        width: 50%;
+                        right: 0%;
+                    }
+
+                    &::after {
+                        width: 50%;
+                        left: 0%;
+                    }
+                }
+            }
+        }
+    }
+
+    .pp-navbar-toggler {
+        border: 0;
+        outline: none;
+        background-color: transparent;
+
+        .pp-hamburger-stick {
+            width: 30px;
+            height: 3px;
+            background-color: $primary;
+            margin: 5px 0;
+            transition: ease all .3s;
+        }
+
+        &.collapsed {
+            .pp-hamburger-stick {
+                &:first-of-type {
+                    transform: rotate(45deg) translate(6px, 5px);
+                }
+
+                &:nth-last-of-type(2) {
+                    opacity: 0;
+                }
+
+                &:last-of-type {
+                    transform: rotate(-45deg) translate(6px, -5px);
+                }
+            }
+        }
+    }
+
+
+    @include media('max', 'lg') {
+
+        .pp-download-resume {
+            display: none;
+        }
+
+        .pp-navbar-collapse {
+            position: absolute;
+            top: 82px;
+            left: 0;
+            width: 100%;
+            background-color: $secondary;
+            padding: 20px;
+            transition: ease all .3s;
+            height: calc(100dvh - 82px);
+            transition: ease all .3s;
+            opacity: 0;
+            visibility: hidden;
+
+
+            .pp-navbar-nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            &.show {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .pp-navbar-nav {
+            gap: 40px;
+
+            .pp-nav-item {
+                .pp-nav-link {
+
+                    &::after {
+                        height: 1px;
+                        bottom: -3px;
+                        width: 100%;
+                        left: 0%;
+                        right: 0%;
+                    }
+
+                    &::before {
+                        display: none;
+                    }
+
+
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,33 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+body,
+html {
+    font-family: "Sora", sans-serif;
+    color: $primary;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $zink-500;
+}
+
+@include media('max', 'md') {
+    br {
+        display: none;
+    }
+}

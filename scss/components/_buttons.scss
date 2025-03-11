@@ -1,0 +1,45 @@
+@use '../utilities/variables' as *;
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: ease all .5s;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: $secondary;
+    background-color: $primary; 
+    border-color: $primary;
+}
+
+.btn-primary {
+    box-shadow: inset 0px 50px $primary;
+    color: $secondary;
+    border: 1px solid $primary;
+    background-color: $primary;
+
+    &:hover,
+    &:focus-visible {
+        box-shadow: inset 0px 0px $primary;
+        color: $primary;
+        border-color: $primary;
+        background-color: $secondary;
+    }
+}
+
+.btn-secondary {
+    box-shadow: inset 0px 0px $primary;
+    color: $primary;
+    background-color: $secondary;
+
+    &:hover,
+    &:focus-visible {
+        box-shadow: inset 0px -50px $primary;
+        color: $secondary;
+        border: 1px solid $secondary;
+    }
+}

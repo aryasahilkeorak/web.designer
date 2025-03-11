@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Sahil Keorak - Web Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./vendors/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendors/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="shortcut icon" href="./assets/images/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="pp-header">
+        <div class="container">
+            <nav class="pp-navbar">
+                <a href="index.html" class="pp-navbar-brand">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+
+                <button class="pp-navbar-toggler d-lg-none" type="button" id="ppNavbarToggler">
+                    <div class="pp-hamburger-stick"></div>
+                    <div class="pp-hamburger-stick"></div>
+                    <div class="pp-hamburger-stick"></div>
+                </button>
+
+                <div class="pp-collapse pp-navbar-collapse">
+                    <ul class="pp-navbar-nav">
+                        <li class="pp-nav-item">
+                            <a href="#about" class="pp-nav-link">About Me</a>
+                        </li>
+                        <li class="pp-nav-item">
+                            <a href="#skills" class="pp-nav-link">Skills</a>
+                        </li>
+                        <li class="pp-nav-item">
+                            <a href="#projects" class="pp-nav-link">Project</a>
+                        </li>
+                        <li class="pp-nav-item">
+                            <a href="#contact" class="pp-nav-link">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="./assets/resume/Sahil-Web-Designer-HTML-CSS-Developer.pdf"
+                    class="btn btn-primary pp-download-resume" download>
+                    Resume <i class="fa-solid fa-download ms-1"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pp-hero">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="pp-hero-content">
+                        <div class="pp-hero-text">
+                            <h1 class="pp-display">
+                                <span class="fw-normal">Hello, I'm</span>
+                                <span class="fw-bold">Sahil Kashyap</span>
+                                <span class="fw-bold">Frontend</span>
+                                <span class="fw-bold pp-text-outline">Developer</span> <br>
+                                <span class="fw-normal">Based In</span>
+                                <span class="fw-bold">India.</span>
+                            </h1>
+                            <p class="pp-hero-description">
+                                I'm Arya Sahil, a passionate Frontend Developer with over 3 years of experience in
+                                crafting
+                                modern, responsive, and user-friendly web interfaces. My expertise lies in HTML, CSS,
+                                JavaScript, and React, ensuring seamless and engaging digital experiences. I am
+                                committed to
+                                delivering high-quality web solutions that meet both client and business needs. Let's
+                                create
+                                something amazing together! 🚀
+                            </p>
+
+                        </div>
+                        <div class="pp-social-icons">
+                            <a href="#">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-reddit-alien"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pp-hero-image">
+                        <img src="./assets/images/hero-image.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="pp-skills" id="skills">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="pp-display pp-section-title"><span class="fw-normal">My</span> <span
+                        class="fw-bold">Skills</span></h2>
+            </div>
+            <div class="pp-skills-row">
+                <div class="pp-skills-col">
+                    <i class="fa-brands fa-html5"></i>
+                    <h5>HTML</h5>
+                </div>
+                <div class="pp-skills-col">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h5>CSS</h5>
+                </div>
+                <div class="pp-skills-col">
+                    <i class="fa-brands fa-js"></i>
+                    <h5>Js</h5>
+                </div>
+                <div class="pp-skills-col">
+                    <i class="fa-brands fa-figma"></i>
+                    <h5>Figma</h5>
+                </div>
+                <div class="pp-skills-col">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h5>Bootstrap</h5>
+                </div>
+                <div class="pp-skills-col">
+                    <i class="fa-brands fa-sass"></i>
+                    <h5>SCSS/SASS</h5>
+                </div>
+                <div class="pp-skills-col">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h5>Git</h5>
+                </div>
+                <div class="pp-skills-col">
+                    <i class="fa-brands fa-github"></i>
+                    <h5>Github</h5>
+                </div>
+                <div class="pp-skills-col">
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h5>Wordpress</h5>
+                </div>
+                <div class="pp-skills-col">
+                    <i class="fa-brands fa-react"></i>
+                    <h5>React Js</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pp-experince" id="experience">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="pp-display pp-section-title">
+                    <span class="fw-normal">My</span>
+                    <span class="fw-bold">Experience</span>
+                </h2>
+            </div>
+            <div class="row gy-4">
+                <div class="col-12">
+                    <div class="pp-experiences-card">
+                        <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap">
+                            <div class="d-flex align-items-center">
+                                <div class="pp-experience-company me-3">
+                                    <img src="./assets/images/icons/ai-logo.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="pp-experience-title">
+                                    <h4 class="mb-0">
+                                        Associate Web Designer at
+                                        <a href="https://appinfoinc.com/">Applied Information Inc </a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="pp-experience-dates">
+                                <p class="mb-0">October 2023 - Present</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0">As a <b>Web Designer</b> at <b>Applied Information Inc</b>, a product-based
+                                company, I
+                                specialize in designing intuitive and visually engaging user interfaces for company
+                                products. My role involves creating responsive layouts, enhancing UI/UX elements, and
+                                ensuring a seamless user experience across different devices. I collaborate closely with
+                                developers to align design solutions with business goals. By staying
+                                up-to-date with modern design trends and best practices, I contribute to building
+                                high-quality digital experiences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="pp-experiences-card filled">
+                        <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap">
+                            <div class="d-flex align-items-center">
+                                <div class="pp-experience-company me-3">
+                                    <img src="./assets/images/icons/seasia-logo.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="pp-experience-title">
+                                    <h4 class="mb-0">
+                                        Associate Consultant Web Designer at
+                                        <a href="https://www.seasiainfotech.com/">Seasia Infotech Pvt. Ltd.</a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="pp-experience-dates">
+                                <p class="mb-0">March 2022 - November 2023</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0">As a <b>Associate Consultant Web Designer</b> at <b>Seasia Infotech</b>, a
+                                service-based company, I was responsible for designing and developing web interfaces for
+                                multiple <b>client projects</b> across various industries. My work involved creating
+                                responsive layouts, optimizing user experience,
+                                and ensuring brand consistency. I collaborated with cross-functional teams to deliver
+                                visually engaging and functional web solutions tailored to client needs. This role
+                                allowed me to enhance my design skills, adapt to different project requirements, and
+                                stay updated with the latest web design trends.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="pp-experiences-card">
+                        <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap">
+                            <div class="d-flex align-items-center">
+                                <div class="pp-experience-company me-3">
+                                    <img src="./assets/images/icons/slinfi-logo.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="pp-experience-title">
+                                    <h4 class="mb-0">
+                                        Internship Trainee
+                                        <a href="https://solitaireinfosystems.com/">Solitaire Infosys Inc</a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="pp-experience-dates">
+                                <p class="mb-0">September 2021 - March 2022</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0">As an <b>Internship Trainee</b> at <b>Solitaire Infosys Inc</b>, I gained
+                                practical experience in <b>web design and front-end development</b>. During this
+                                <b>6-month internship</b>, I learned and worked with <b>HTML, CSS, JavaScript,
+                                    Bootstrap, Git, Figma, and other essential web design tools</b>. I collaborated with
+                                senior designers to create responsive layouts and enhance UI/UX elements. This hands-on
+                                experience helped me develop a strong foundation in web design and equipped me with the
+                                necessary skills to work on real-world projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="pp-about" id="about">
+        <div class="container">
+            <div class="row gx-0 gy-4">
+                <div class="col-lg-6 pe-0 pe-lg-4 pe-xl-0 d-none d-lg-block">
+                    <img src="./assets/images/about-image.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="pp-display pp-section-title mb-4">
+                        <span class="fw-normal">About</span>
+                        <span class="fw-bold">Me</span>
+                    </h2>
+                    <p>
+                        I am a passionate Web Designer with over three years of experience in crafting user-friendly and
+                        visually appealing interfaces. Currently, I work at Applied Information Inc, a product-based
+                        company, where I focus on designing and improving the UI of company products, ensuring modern,
+                        responsive, and engaging designs. My role involves collaborating with developers and
+                        stakeholders to create seamless user experiences that enhance product functionality.
+                    </p>
+                    <p>
+                        Previously, I worked at Seasia Infotech, a service-based company, where I handled multiple
+                        client projects, creating custom UI/UX solutions across various industries. This experience
+                        helped me refine my skills in responsive design, front-end development, and collaboration with
+                        cross-functional teams to deliver high-quality web solutions.
+                    </p>
+                    <p>
+                        I began my journey as an Internship Trainee at Solitaire Infosys Inc, where I gained hands-on
+                        experience in HTML, CSS, JavaScript, Bootstrap, Git, and Figma. With a strong foundation in web
+                        design, I am committed to staying updated with the latest trends and delivering high-quality
+                        digital experiences. I thrive on creativity and innovation, always looking for new ways to
+                        enhance usability and aesthetic appeal in my designs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pp-projects" id="projects">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="pp-display pp-section-title">
+                    <span class="fw-normal">My</span>
+                    <span class="fw-bold">Projects</span>
+                </h2>
+            </div>
+
+            <div class="row gy-4 mb-4 mb-lg-5 gx-5 align-items-center">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="pp-project-thumbnail">
+                        <img src="./assets/images/projects/bitani.jpeg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-7">
+                    <div class="pp-project-info">
+                        <h3 class="project-number pp-display">01</h3>
+                        <h4 class="project-title">Bitani - Crypto & Advertisements</h4>
+                        <p class="project-description">Bitani is a website where users can earn income online for free
+                            by completing various tasks from home. Bitani sells advertising space and transfers the
+                            crypto revenue to users who view ads, complete surveys, mint crypto tokens, and play games.
+                            Bitani has been operating since 2018 and has a large community of registered members
+                            worldwide. Bitani also offers an affiliate program where users can earn commissions by
+                            referring friends. Bitani strives to share wealth around the globe by offering a
+                            work-from-home solution that puts money in the pockets of its members.</p>
+                        <a href="https://stg.bitani.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4 mb-4 mb-lg-5 gx-5 align-items-center flex-column-reverse flex-lg-row">
+
+                <div class="col-lg-6 col-xl-7">
+                    <div class="pp-project-info">
+                        <h3 class="project-number pp-display">02</h3>
+                        <h4 class="project-title">Tera Cloud - Finance Platform</h4>
+                        <p class="project-description">Tera.cloud is a finance platform designed for business owners and
+                            finance teams. It offers various products, including payments, banking, spend management,
+                            and corporate cards. Tera.cloud provides solutions for neobanks, aggregators, marketplaces,
+                            card providers, fintech companies, and MSMEs. The platform helps businesses automate their
+                            finances, optimize spending with control and visibility, issue cards, manage spend budgets,
+                            set up approval flows, and close their books faster, while also offering cashback on every
+                            dollar spent.</p>
+                        <a href="https://tera.cloud/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-5 ">
+                    <div class="pp-project-thumbnail">
+                        <img src="./assets/images/projects/tera.cloud.jpeg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4 mb-4 mb-lg-5 gx-5 align-items-center">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="pp-project-thumbnail">
+                        <img src="./assets/images/projects/glance.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-7">
+                    <div class="pp-project-info">
+                        <h3 class="project-number pp-display">03</h3>
+                        <h4 class="project-title">Glance - Traffic Control System</h4>
+                        <p class="project-description">Glance, by Applied Information, is a smart traffic system that
+                            keeps traffic flowing smoothly and improves safety. It uses sensors and cameras to monitor
+                            traffic and adjust traffic lights in real-time. This helps reduce congestion and travel
+                            times. Glance can also quickly detect accidents and provide drivers with real-time updates
+                            and route suggestions. With Glance, transportation agencies can make better decisions to
+                            improve traffic flow. Ultimately, Glance helps create a more efficient and safer
+                            transportation experience for everyone.</p>
+                        <a href="https://dev.appinfoinc.com:98/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center pt-5">
+                <a href="#home" class="btn btn-lg btn-secondary">More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pp-testimonials">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="pp-display pp-section-title">
+                    <span class="fw-normal">Client</span>
+                    <span class="fw-bold">Testimonials</span>
+                </h2>
+            </div>
+            <div class="owl-carousel">
+
+                <div class="pp-testimonial-card">
+                    <div class="pp-testimonial-img">
+                        <img src="./assets/images/client-img.png" alt="" class="img-fluid">
+                        <span class="quote-icon">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </span>
+                    </div>
+
+                    <p class="testimonial-para">
+                        I recently had to jump on 10+ different calls across eight different countries to find the
+                        right owner.
+                    </p>
+                    <h4 class="client-name">John Doe</h4>
+                    <p class="client-position">Transportation Manager</p>
+                </div>
+
+                <div class="pp-testimonial-card">
+                    <div class="pp-testimonial-img">
+                        <img src="./assets/images/client-img.png" alt="" class="img-fluid">
+                        <span class="quote-icon">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </span>
+                    </div>
+
+                    <p class="testimonial-para">
+                        I recently had to jump on 10+ different calls across eight different countries to find the
+                        right owner.
+                    </p>
+                    <h4 class="client-name">John Doe</h4>
+                    <p class="client-position">Transportation Manager</p>
+                </div>
+
+                <div class="pp-testimonial-card">
+                    <div class="pp-testimonial-img">
+                        <img src="./assets/images/client-img.png" alt="" class="img-fluid">
+                        <span class="quote-icon">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </span>
+                    </div>
+
+                    <p class="testimonial-para">
+                        I recently had to jump on 10+ different calls across eight different countries to find the
+                        right owner.
+                    </p>
+                    <h4 class="client-name">John Doe</h4>
+                    <p class="client-position">Transportation Manager</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pp-contact-us" id="contact">
+        <div class="container">
+            <div class="row flex-column-reverse flex-lg-row align-items-center gy-3 gx-5">
+                <div class="col-lg-6 col-xl-5">
+                    <form action="#" class="contact-form">
+                        <div class="mb-2">
+                            <input type="text" name="name" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-2">
+                            <input type="email" name="mail" id="mail" placeholder="Email">
+                        </div>
+                        <div class="mb-2">
+                            <input type="tel" name="phone" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="mb-2">
+                            <textarea name="message" id="message" placeholder="How can i help?*" rows="4"></textarea>
+                        </div>
+
+                        <div class="d-flex gap-2 gap-md-4">
+                            <input type="submit" value="Get In Touch" class="btn btn-primary">
+                            <div class="pp-social-icons">
+                                <a href="#">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-reddit-alien"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-6 offset-xl-1">
+                    <div class="contact-content">
+                        <h2 class="pp-display">
+                            <span class="fw-bold">Let's</span>
+                            <span class="fw-bold pp-text-outline">talk</span>
+                            <span class="fw-bold">for</span> <br>
+                            <span class="fw-bold">Something special</span>
+                        </h2>
+                        <p>
+                            I'm always excited to connect and collaborate! Whether you have a project in mind, a
+                            question, or
+                            just want to say hello, feel free to reach out. I'll do my best to respond as soon as
+                            possible!
+                        </p>
+                        <h3 class="mb-3 mb-xl-5"><a href="mailto:aryasahilkeorak@gmail.com">aryasahilkeorak@gmail.com</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pp-footer">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/images/logo.png" alt="" class="img-fluid">
+                </a>
+                <div class="footer-copyright text-end">
+                    <p class="mb-0">&copy; 2025-2026 Arya Sahil keorak</p>
+                    <p class="mb-0">Made with <i class="fa-solid fa-heart"></i> In <span class="india-text">India</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./vendors/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            arrow: false,
+            margin: 10,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

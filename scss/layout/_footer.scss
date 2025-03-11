@@ -1,0 +1,36 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+.pp-footer {
+    background-color: $primary;
+    padding: 40px 0;
+
+    .footer-logo {
+        img {
+            filter: invert(1);
+        }
+    }
+
+    .footer-copyright {
+        color: $secondary;
+
+        i {
+            color: #ff0000;
+        }
+
+        .india-text {
+            font-weight: bold;
+            text-transform: uppercase;
+            background: linear-gradient(to bottom, #FF9933 33%, white 55%, white 33%, #3dd52f 33%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+    }
+
+    @include media('max', 'lg') {
+        padding: 20px 0;
+    }
+}

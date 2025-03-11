@@ -1,0 +1,342 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+.pp-hero {
+    padding: 10px 0 40px 0;
+    position: relative;
+
+    .pp-hero-description {
+        color: $zink-500;
+    }
+
+    .pp-social-icons {
+        position: absolute;
+        bottom: 15px;
+    }
+
+    .pp-hero-image {
+        position: relative;
+
+        &::after {
+            content: '';
+            height: 3px;
+            width: 130%;
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+            background-color: $primary;
+        }
+    }
+
+    @include media('max', 'xl') {
+        padding: 30px 0 20px 0;
+
+        .pp-hero-content {
+            .pp-hero-text {
+                margin-bottom: 30px;
+            }
+        }
+
+        .pp-hero-image {
+            &::after {
+                width: 120%;
+            }
+        }
+
+        .pp-social-icons {
+            position: static;
+        }
+
+        .row {
+            align-items: end !important;
+        }
+
+    }
+
+    @include media('max', 'lg') {
+
+
+        .row {
+            .col-lg-6 {
+                &:last-of-type {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    @include media('max', 'sm') {
+        .pp-hero-content {
+            .pp-hero-text {
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+.pp-skills {
+    padding-top: 80px;
+
+    .pp-skills-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .pp-skills-col {
+            width: calc(100% / 5 - 30px);
+            aspect-ratio: 1 / 1;
+            border: 3px solid $primary;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: ease all .5s;
+
+            h5 {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            i {
+                font-size: 80px;
+                margin-bottom: 10px;
+            }
+
+            &:hover {
+                background-color: $primary;
+                color: $secondary;
+            }
+        }
+    }
+
+    @include media('max', 'xl') {
+        padding-top: 50px;
+
+        .pp-skills-row {
+            gap: 24px;
+            justify-content: start;
+
+            .pp-skills-col {
+                width: calc(100% / 4 - 18px);
+            }
+        }
+    }
+
+    @include media('max', 'lg') {
+        .pp-skills-row {
+            .pp-skills-col {
+                width: calc(100% / 3 - 16px);
+            }
+        }
+    }
+
+    @include media('max', 'sm') {
+        padding-top: 30px;
+
+        .pp-skills-row {
+            gap: 12px;
+
+            .pp-skills-col {
+                width: calc(100% / 3 - 8px);
+
+                i {
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+
+                h5 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @include media('max', 'xs') {
+        .pp-skills-row {
+            .pp-skills-col {
+                i {
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+
+                h5 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.pp-experince {
+    background-color: $primary;
+
+    .pp-experiences-card {
+        border: 2px solid $zink-500;
+        border-radius: 15px;
+        padding: 30px;
+        color: $zink-300;
+        transition: ease all .5s;
+
+        .pp-experience-company {
+            width: 50px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .pp-experience-title {
+            width: calc(100% - 50px);
+
+            h4,
+            a {
+                color: $secondary;
+
+                font-weight: 600;
+            }
+        }
+
+        &.filled {
+            background-color: $zink-800;
+            border-color: $zink-800;
+        }
+
+        &:hover {
+            border-color: $secondary;
+        }
+
+    }
+
+    @include media('max', 'lg') {
+        .pp-experiences-card {
+            padding: 15px;
+        }
+    }
+
+    @include media('max', 'sm') {
+        .pp-experiences-card {
+            .pp-experience-dates {
+                width: 100%;
+                margin-top: 10px;
+                text-align: end;
+            }
+        }
+    }
+}
+
+.pp-about {
+    p {
+        color: $zink-500;
+    }
+
+    img {
+        min-height: 100%;
+        margin-top: 10px;
+    }
+}
+
+.pp-experince,
+.pp-projects {
+    background-color: $primary;
+
+    .pp-section-title {
+        color: $secondary ;
+    }
+}
+
+.pp-projects {
+    .pp-project-thumbnail {
+        border-radius: 15px;
+        overflow: hidden;
+        min-height: 350px;
+        max-height: 350px;
+
+        img {
+            transition: ease all .8s;
+        }
+
+        &:hover {
+            img {
+                transform: translateY(-20%);
+            }
+        }
+    }
+
+    .pp-project-info {
+        >* {
+            color: $secondary;
+        }
+
+        .project-title {
+            font-size: 28px;
+        }
+
+        .project-description {
+            color: $zink-300;
+        }
+    }
+
+    @include media('max', 'sm') {
+        .pp-project-thumbnail {
+            min-height: 250px;
+            max-height: 250px;
+        }
+    }
+}
+
+.pp-contact-us {
+    .contact-form {
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid $primary;
+            border-radius: 5px;
+            padding: 12px 15px;
+            color: $zink-500;
+
+            &::placeholder {
+                color: $zink-500;
+            }
+        }
+
+        .btn-primary {
+            color: $secondary;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        .pp-social-icons {
+            a {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+
+    .contact-content {
+        p {
+            color: $zink-500;
+        }
+
+        a {
+            color: $primary;
+        }
+    }
+
+    @include media('max', 'md') {
+        .pp-social-icons {
+            gap: 10px;
+        }
+    }
+
+}

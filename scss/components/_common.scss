@@ -1,0 +1,32 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+section {
+    padding: 60px 0;
+
+    @include media('max', 'lg') {
+        padding: 50px 0;
+    }
+
+    @include media('max', 'md') {
+        padding: 40px 0;
+    }
+
+    @include media('max', 'sm') {
+        padding: 20px 0;
+    }
+
+}
+
+.pp-section-title {
+    margin-bottom: 60px;
+
+    @include media('max', 'xl') {
+        margin-bottom: 40px;
+    }
+
+    @include media('max', 'sm') {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
