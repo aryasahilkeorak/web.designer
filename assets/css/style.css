@@ -136,8 +136,9 @@ p {
 .pp-header {
   width: 100%;
   padding: 10px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  height: 82px;
   z-index: 9999;
   background-color: #ffffff;
 }
@@ -394,6 +395,7 @@ p {
 
 section {
   padding: 60px 0;
+  scroll-margin-top: 70px;
 }
 @media (max-width: 992px) {
   section {
@@ -403,11 +405,6 @@ section {
 @media (max-width: 768px) {
   section {
     padding: 40px 0;
-  }
-}
-@media (max-width: 576px) {
-  section {
-    padding: 20px 0;
   }
 }
 
@@ -429,6 +426,7 @@ section {
 .pp-hero {
   padding: 10px 0 40px 0;
   position: relative;
+  margin-top: 82px;
 }
 .pp-hero .pp-hero-description {
   color: #71717A;
